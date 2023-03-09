@@ -11,7 +11,7 @@ interface CanapesProps {
 }
 export const CanapesCard = ({ item }: { item: CanapesProps }) => {
   return (
-    <div className="h-[340px] w-[250px] shadow-[0px_6px_20px_0px_rgba(0,0,0,0.2)] p-6 rounded-xl m-6">
+    <div className="h-[340px] w-[250px] shadow-[0px_6px_20px_0px_rgba(0,0,0,0.2)] p-6 rounded-xl md:m-6 m-0 my-6">
       <img src={item.imgSrc} alt="cap1" className="m-auto" />
       <div className="flex flex-col gap-1 mt-2">
         {item?.category && (

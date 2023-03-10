@@ -11,8 +11,12 @@ interface CanapesProps {
 }
 export const CanapesCard = ({ item }: { item: CanapesProps }) => {
   return (
-    <div className="h-[340px] w-[250px] shadow-[0px_6px_20px_0px_rgba(0,0,0,0.2)] p-6 rounded-xl md:m-6 m-0 my-6">
-      <img src={item.imgSrc} alt="cap1" className="m-auto" />
+    <div className="h-[350px] w-[270px] shadow-[0px_6px_20px_0px_rgba(0,0,0,0.2)] p-6 rounded-xl mx-2 mb-6 mt-4">
+      <img
+        src={item.imgSrc}
+        alt="cap1"
+        className="m-auto h-[220px] w-[220px]"
+      />
       <div className="flex flex-col gap-1 mt-2">
         {item?.category && (
           <p className="text-[11px] leading-[10px] text-black">
@@ -33,7 +37,7 @@ export const CanapesCard = ({ item }: { item: CanapesProps }) => {
           </p>
         </div>
       ) : (
-        <div className="grid grid-cols-2 justify-between mt-4">
+        <div className="grid grid-cols-2 justify-between mt-2">
           <p className="text-[18px] leading-[20px] text-[#ba7e86] font-bold flex items-center">
             {item.chain}
           </p>
